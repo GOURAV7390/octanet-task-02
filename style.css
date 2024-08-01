@@ -1,0 +1,108 @@
+/* styling for the body */
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4caf50, #2196f3);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the main container of the To-Do List */
+#todo-container {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    width: 400px;
+}
+
+/* Styling for the heading within the To-Do List container */
+#todo-container h1{
+    color: #3e3e3e;
+}
+
+/* Styling for the form to add tasks */
+#task-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 20px;
+}
+
+/* Styling for the task input field */
+#task-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%;
+    height: 25px;
+    outline-color: #ccc;
+}
+
+/* Styling for the button to add tasks */
+#add-button {
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 25%;
+    height: 45px;
+    border-radius: 5px;
+    border: 0;
+    color: rgb(46, 46, 46);
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+/* Styling for the button on hover */
+#add-button:hover{
+    background: rgba(213, 213, 213, 0.5);
+}
+
+#task-list {
+    /* Styling for the task list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for each task item within the list */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Styling for the task content within each task item */
+.task-item span{
+    width: 66%;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* Styling for buttons within each task item */
+.task-item button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+/* Styling specific to the Edit button */
+#edit{
+    background: #4caf50;
+}
+
+/* Styling specific to the Delete button */
+#delete{
+    background: #2196f3;
+}
